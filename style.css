@@ -7,13 +7,38 @@ h1 {
     font-style: italic;
     border-radius: 5px;
     margin: auto;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px grey ;    
 }
 
-.navigation-bar{
-    background-color: rgb(0, 150, 200);
-    text-align: center;
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ nav ul li{
+   display: inline-block;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    color:black;
+    transition: background-color 1s;
+    transition: border-radius 0.5s;
+    transition: box-shadow 0.15s;
+ }
+
+ nav ul li a:hover{
+    background-color: rgb(0, 150, 200);   
+    border-radius: 5px;
     color: white;
-    border-radius: 5px;   
-}
+    box-shadow: 2px 2px 10px grey ;
+ }
 
+ nav ul li a:active{
+    color: blue;
+ }
